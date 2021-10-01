@@ -1,10 +1,8 @@
-
 const loadProducts = () => {
   fetch("https://raw.githubusercontent.com/ProgrammingHero1/ranga-store-api/main/ranga-api.json")
     .then(response => response.json())
     .then(data => showProducts(data))
 };
-
 
 // show all product in UI 
 const showProducts = (products) => {
